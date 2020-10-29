@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Search Profie</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+	body{
+		background-color:#bfbbbb;
+	}
+	.container {
+  box-shadow: 0 4px 8px 0 #736d6d;
+  position: relative;
+	 max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+   border: 4px solid #1A1110;
+  border-radius: 12px;
+  
+}
+
+        #outcome {
+    position: relative;
+	 max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+   border: 4px solid #1A1110;
+  border-radius: 12px;
+            }
+    #outcome img {
+   
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+    #h3{
+        position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    }
+	button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: grey;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+button:hover {background-color: black}
+
+button:active {
+  background-color: black;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <br><br>
+        <h1 style="text-align: center;">
+        Search Profile</h1>
+        <form id="formid" autocomplete="off">
+            <div class="from-group">
+                <input type="text" class="form-control" id="search" placeholder="Username" required>
+            </div><br>
+            <div class="form-group">
+                <button class="btn btn-dark btn-block">Search</button>
+            </div>
+        </form>
+        <div id="outcome"></div>
+    </div>   
+    
+</body>
+<script src="script.js"></script>
+</html>
